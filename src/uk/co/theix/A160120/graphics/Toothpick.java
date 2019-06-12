@@ -24,9 +24,9 @@ public class Toothpick extends Paint {
 	private boolean intersects(int x, int y) {
 		if (xPoints[0] == x && yPoints[0] == y) {
 			return true;
-		}/* else if ((xPoints[xPoints.length/3*1]-1 > x || xPoints[xPoints.length/3*1]+1 < x) && (yPoints[yPoints.length/3*1]-1 > y || yPoints[yPoints.length/3*1]+1 < y)) {
+		} else if (xPoints[xPoints.length/3*1] == x && yPoints[yPoints.length/3*1] == y) {
 			return true;
-		}*/ else if (xPoints[xPoints.length/3*2] == x && yPoints[yPoints.length/3*2] == y) {
+		} else if (xPoints[xPoints.length/3*2] == x && yPoints[yPoints.length/3*2] == y) {
 			return true;
 		} else {
 			return false;

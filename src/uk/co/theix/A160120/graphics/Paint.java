@@ -35,6 +35,7 @@ public class Paint extends Canvas {
 	}
 	
 	void update() {
+		next = new ArrayList<Toothpick>();
 		for (Toothpick t : picks) {
 			if (t.newPick) {
 				Toothpick nextT = t.createT(picks);
@@ -54,7 +55,6 @@ public class Paint extends Canvas {
 		}
 
 		picks.addAll(next);
-		System.out.println(picks.size());
 	}
 
 }
